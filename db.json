@@ -1,0 +1,34 @@
+{
+  "habits":[
+    {
+      "id":1,
+      "name":"Exercise",
+      "frequency":"daily",
+      "progress":3
+    },
+    {
+      "id":2,
+      "name":"Clean House",
+      "frequency":"weekly",
+      "progress":2
+    },
+    {
+      "id":3,
+      "name":"Study",
+      "frequency":"daily",
+      "progress":3
+    },
+    {
+      "id":4,
+      "name":"Yard Work",
+      "frequency":"monthly",
+      "progress":1
+    },
+    {
+      "id":5,
+      "name":"Check/Respond Emails",
+      "frequency":"daily",
+      "progress":3
+    }
+  ]
+}
