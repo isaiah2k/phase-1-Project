@@ -17,6 +17,12 @@ function renderHabits(habits) {
     const habitItem = document.createElement('li')
     habitItem.textContent = `${habit.name} (${habit.frequency}) ${habit.progress}`
 
+    const deleteButton = document.createElement('button')
+    deleteButton.textContent = 'Delete'
+    deleteButton.addEventListener('click', () => deleteHabit(habit.id))
+
+    habitItem.appendChild(deleteButton)
+
     habitList.appendChild(habitItem)
   })
 }
