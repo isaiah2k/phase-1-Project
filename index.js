@@ -29,6 +29,7 @@ function renderHabits(habits) {
     deleteButton.addEventListener('click', () => deleteHabit(habit.id))
 
     habitItem.appendChild(progressButton)
+
     habitItem.appendChild(deleteButton)
 
     habitList.appendChild(habitItem)
@@ -57,6 +58,18 @@ function addHabit() {
       renderHabits([addedHabit])
     })
     .catch(error => console.error('Error adding habit:', error))
+}
+
+function updateHabit(id, currentProgress) {
+  fetch(`${baseURL}/${id}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ progress: currentProgress + 1 })
+  })
+    .then(() => {
+      loadHabits()
+    })
+    .catch(error => console.error('Error updating habit'))
 }
 
 function deleteHabit(id) {
