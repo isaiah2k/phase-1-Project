@@ -50,6 +50,16 @@ function addHabit() {
     })
     .catch(error => console.error('Error adding habit:', error))
 }
+function deleteHabit(id) {
+  fetch(`${baseURL}/${id}`, {
+    method: 'DELETE'
+  })
+    .then(() => {
+      loadHabits()
+    })
+    .catch(error => console.error('Error deleting habit:', error))
+}
+
 loadHabits()
 
 habitForm.addEventListener('submit', addHabit)
