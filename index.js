@@ -29,7 +29,7 @@ function renderHabits(habits) {
     deleteButton.addEventListener('click', () => deleteHabit(habit.id))
 
     habitItem.appendChild(progressButton)
-
+    
     habitItem.appendChild(deleteButton)
 
     habitList.appendChild(habitItem)
@@ -84,5 +84,9 @@ function deleteHabit(id) {
 
 loadHabits()
 
-habitForm.addEventListener('submit', addHabit)
-
+//nightmode
+document.addEventListener('keydown', (event) => {
+  if (event.key === '`') {
+    document.body.classList.toggle('night-mode')
+  }
+})
