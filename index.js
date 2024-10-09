@@ -13,6 +13,9 @@ function loadHabits() {
 }
 
 function renderHabits(habits) {
+
+  habitList.replaceChildren()
+
   habits.forEach(habit => {
     const habitItem = document.createElement('li')
     habitItem.textContent = `${habit.name} (${habit.frequency}) ${habit.progress}`
@@ -50,6 +53,7 @@ function addHabit() {
     })
     .catch(error => console.error('Error adding habit:', error))
 }
+
 function deleteHabit(id) {
   fetch(`${baseURL}/${id}`, {
     method: 'DELETE'
