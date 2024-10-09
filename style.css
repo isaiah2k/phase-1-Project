@@ -7,3 +7,17 @@ body.night-mode button {
   background-color: #1d3b53;
   color: #d6deeb;
 }
+
+body {
+  font-size: 150%;
+  line-height: 1.8;
+}
+
+ul#habit-list li span {
+  text-align: left;
+}
+
+ul#habit-list li button {
+  width: 70px;
+  text-align: center;
+}

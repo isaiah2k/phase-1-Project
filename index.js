@@ -84,6 +84,8 @@ function deleteHabit(id) {
 
 loadHabits()
 
+habitForm.addEventListener('submit', addHabit)
+
 //nightmode
 document.addEventListener('keydown', (event) => {
   if (event.key === '`') {
