@@ -26,3 +26,8 @@ ul#habit-list li button {
   width: 70px;
   text-align: center;
 }
+
+h2 {
+  letter-spacing: 0.0em;
+  word-spacing: 1.5em;
+}
