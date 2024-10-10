@@ -43,7 +43,7 @@ Then, navigate into the folder:
    - `git clone git@github.com:YOUR_USERNAME/habit-tracker.git`
       - **_<span style="color:red">Replace link with your SSH link_</span>**
 
-**5.** Navigate into the cloned project folder:
+**5.** Navigate into the cloned habit-tracker folder:
    - `cd habit-tracker`
 
 ### **Step 3:** Install json-server
@@ -53,7 +53,7 @@ Then, navigate into the folder:
 
 ### **Step 4:** Run json-server
 
-**7.** To start managing your habits data, run json-server in your project directory with this command:
+**7.** To start managing your habits data, run json-server in your habit-tracker directory with this command:
    - `json-server db.json`
 
 ### **Step 5:** Install live-server
@@ -63,7 +63,7 @@ Then, navigate into the folder:
 
 ### **Step 6:** Run live-server
 
-**9.** After installing live-server, you can launch it in the project directory with:
+**9.** After installing live-server, you can launch it in the new terminal by going to the habit-tracker directory and typing:
    - `live-server`
 
 **10.** live-server will automatically open the app in your default browser. If for some reason it doesn't, manually visit http://127.0.0.1:8080 or http://localhost:8080 in your browser.
@@ -74,11 +74,11 @@ Then, navigate into the folder:
 
 ## Development tools
 
-- **_HTML:_** For the structure of the app.
-- **_CSS:_** For styling, including night mode support.
-- **_JavaScript:_** To handle the functionality of the app (e.g., adding, updating, and deleting habits).
-- **_json-server:_** A local backend for storing and retrieving habit data.
-- **_live-server:_** A simple web server that serves files and auto-refreshes the browser when changes are detected.
+- **_HTML_**: For the structure of the app.
+- **_CSS_**: For styling, including night mode support.
+- **_JavaScript_**: To handle the functionality of the app (e.g., adding, updating, and deleting habits).
+- **_json-server_**: A local backend for storing and retrieving habit data.
+- **_live-server_**: A simple web server that serves files and auto-refreshes the browser when changes are detected.
 
 ## Night Mode
 
