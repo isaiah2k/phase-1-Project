@@ -23,7 +23,7 @@ Follow these steps to get the Habit Tracker running in your browser.
 
 ### **Step 1:** Create a Folder for the App
 
-**1.** Create a new folder on your computer where the Habit Tracker will reside. On Windows, open File Explorer, go to the location where you'd like to place the folder, right-click, and choose "New" > "Folder." Name it "habit-tracker".
+**1.** Create a new folder on your computer where the Habit Tracker will reside. On Windows, open File Explorer, go to the location where you'd like to place the folder, right-click, and choose "New" > "Folder." Name it "habit-tracker-app".
 
 On Mac/Linux, open Terminal, and type:
 - `mkdir habit-tracker-app`
