@@ -14,8 +14,11 @@ body {
   text-align: center;
 }
 
-ul#habit-list li span {
-  text-align: left;
+ul#habit-list li {
+  white-space: pre;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  list-style-type: none;
 }
 
 ul#habit-list li button {
