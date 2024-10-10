@@ -11,6 +11,7 @@ body.night-mode button {
 body {
   font-size: 150%;
   line-height: 1.8;
+  text-align: center;
 }
 
 ul#habit-list li span {
