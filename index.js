@@ -18,7 +18,7 @@ function renderHabits(habits) {
 
   habits.forEach(habit => {
     const habitItem = document.createElement('li')
-    habitItem.textContent = `${habit.name} (${habit.frequency}) ${habit.progress}`
+    habitItem.textContent = `${habit.name}             (${habit.frequency})             ${habit.progress}`
 
     const progressButton = document.createElement('button')
     progressButton.textContent = '+1'
@@ -90,5 +90,10 @@ habitForm.addEventListener('submit', addHabit)
 document.addEventListener('keydown', (event) => {
   if (event.key === '`') {
     document.body.classList.toggle('night-mode')
+    localStorage.setItem('nightMode', document.body.classList.contains('night-mode') ? 'enabled' : 'disabled')
   }
 })
+
+if (localStorage.getItem('nightMode') === 'enabled') {
+  document.body.classList.add('night-mode')
+}
