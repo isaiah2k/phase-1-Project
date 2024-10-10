@@ -1,3 +1,15 @@
+//nightmode
+document.addEventListener('keydown', (event) => {
+  if (event.key === '`') {
+    document.body.classList.toggle('night-mode')
+    localStorage.setItem('nightMode', document.body.classList.contains('night-mode') ? 'enabled' : 'disabled')
+  }
+})
+
+if (localStorage.getItem('nightMode') === 'enabled') {
+  document.body.classList.add('night-mode')
+}
+
 const baseURL = 'http://localhost:3000/habits'
 
 const habitForm = document.getElementById('habit-form')
@@ -86,14 +98,3 @@ loadHabits()
 
 habitForm.addEventListener('submit', addHabit)
 
-//nightmode
-document.addEventListener('keydown', (event) => {
-  if (event.key === '`') {
-    document.body.classList.toggle('night-mode')
-    localStorage.setItem('nightMode', document.body.classList.contains('night-mode') ? 'enabled' : 'disabled')
-  }
-})
-
-if (localStorage.getItem('nightMode') === 'enabled') {
-  document.body.classList.add('night-mode')
-}
