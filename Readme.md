@@ -1,6 +1,6 @@
-# Habit Tracker App
+# Habit Tracker Web App
 
-Welcome to my Habit Tracker app. I designed this tool to help stay on track with certain daily, weekly, or monthly tasks that I've struggled with doing for myself. Whether it's exercising, cleaning the house, or checking your emails daily, this app helps manage it all.
+Welcome to the Habit Tracker app. I designed this tool to help stay on track with certain daily, weekly, or monthly tasks that I've struggled with accomplishing for myself. Whether it's exercising, cleaning the house, or checking emails daily, this app helps manage it all.
 
 ## Features
 
@@ -9,6 +9,7 @@ Welcome to my Habit Tracker app. I designed this tool to help stay on track with
 - Delete Habits: Remove habits from your list when you no longer need them with a delete button.
 - Night Mode: Switch to a darker theme using the backtick key ``(`)``.
 
+![HabitApp](./screenshot.png)
 ## Habit Management
 
 1. Add a Habit: Use the input form to add a new habit by entering a name and choosing the frequency (daily, weekly, or monthly). Click "Add Habit," and the habit will appear in the list.
@@ -23,7 +24,7 @@ Follow these steps to get the Habit Tracker running in your browser.
 
 ### **Step 1:** Create a Folder for the App
 
-**1.** Create a new folder on your computer where the Habit Tracker will reside. On Windows, open File Explorer, go to the location where you'd like to place the folder, right-click, and choose "New" > "Folder." Name it "habit-tracker".
+**1.** Create a new folder on your computer where you want the Habit Tracker to reside. On Windows, open File Explorer, go to the location where you'd like to place the folder, right-click, and choose "New" > "Folder." Name it "habit-tracker-app".
 
 On Mac/Linux, open Terminal, and type:
 - `mkdir habit-tracker-app`
@@ -43,7 +44,7 @@ Then, navigate into the folder:
    - `git clone git@github.com:YOUR_USERNAME/habit-tracker.git`
       - **_<span style="color:red">Replace link with your SSH link_</span>**
 
-**5.** Navigate into the cloned project folder:
+**5.** Navigate into the cloned habit-tracker folder:
    - `cd habit-tracker`
 
 ### **Step 3:** Install json-server
@@ -53,17 +54,17 @@ Then, navigate into the folder:
 
 ### **Step 4:** Run json-server
 
-**7.** To start managing your habits data, run json-server in your project directory with this command:
+**7.** To start managing your habits data, run json-server in your habit-tracker directory with this command:
    - `json-server db.json`
 
 ### **Step 5:** Install live-server
 
-**8.** The app uses live-server to serve the HTML and JavaScript files locally and automatically reload changes in your browser. If you don't already have live-server installed, you can install it globally by opening a new terminal and running:
+**8.** The app uses live-server to serve the HTML and JavaScript files locally, and automatically reload changes in your browser. If you don't already have live-server installed, you can install it globally by opening a new terminal and running:
    - `npm install -g live-server`
 
 ### **Step 6:** Run live-server
 
-**9.** After installing live-server, you can launch it in the project directory with:
+**9.** After installing live-server, you can launch it in the new terminal by going to the habit-tracker directory and typing:
    - `live-server`
 
 **10.** live-server will automatically open the app in your default browser. If for some reason it doesn't, manually visit http://127.0.0.1:8080 or http://localhost:8080 in your browser.
@@ -72,13 +73,13 @@ Then, navigate into the folder:
 
 **11.** Once the app is running in your browser, you can start adding habits, and tracking your progress.
 
-## Development tools
+## Dev tools
 
-- **_HTML:_** For the structure of the app.
-- **_CSS:_** For styling, including night mode support.
-- **_JavaScript:_** To handle the functionality of the app (e.g., adding, updating, and deleting habits).
-- **_json-server:_** A local backend for storing and retrieving habit data.
-- **_live-server:_** A simple web server that serves files and auto-refreshes the browser when changes are detected.
+- **_HTML_**: For the structure of the app.
+- **_CSS_**: For styling, including night mode support.
+- **_JavaScript_**: To handle the functionality of the app (e.g., adding, updating, and deleting habits).
+- **_json-server_**: A local backend for storing and retrieving habit data.
+- **_live-server_**: A simple web server that serves files and auto-refreshes the browser when changes are detected.
 
 ## Night Mode
 

@@ -91,7 +91,7 @@ function deleteHabit(id) {
     .then(() => {
       loadHabits()
     })
-    .catch(error => console.error('Error deleting habit:', error))
+
 }
 
 loadHabits()
