@@ -22,7 +22,7 @@ Welcome to the Habit Tracker app. I designed this tool to help stay on track wit
 
 Follow these steps to get the Habit Tracker running in your browser.
 
-### **Step 1:** Create a Folder for the App
+### Step 1: Create a Folder for the App
 
 **1.** Create a new folder on your computer where you want the Habit Tracker to reside. On Windows, open File Explorer, go to the location where you'd like to place the folder, right-click, and choose "New" > "Folder." Name it "habit-tracker-app".
 
@@ -32,7 +32,7 @@ On Mac/Linux, open Terminal, and type:
 Then, navigate into the folder:
 - `cd habit-tracker-app`
 
-### **Step 2:** Fork and Clone the Repository from GitHub
+### Step 2: Fork and Clone the Repository from GitHub
 
 **2.** Go to the GitHub page of the Habit Tracker repository.
    - On the GitHub page, click the Fork button at the top right of the page to create a copy of the repository under your own GitHub account.
@@ -40,36 +40,36 @@ Then, navigate into the folder:
 **3.** After forking, you'll want to clone your forked repository to your local machine:
    - On the forked repository page, click the Code button (usually in <span style="color:green">green</span>) and copy the SSH URL.
    
-**4.** In your terminal or command prompt, navigate to the habit-tracker folder you created in Step 1, then run the following command to clone the repository:
-   - `git clone git@github.com:YOUR_USERNAME/habit-tracker.git`
+**4.** In your terminal or command prompt, navigate to the habit-tracker-app folder you created in Step 1, then run the following command to clone the repository:
+   - `git clone git@github.com:YOUR_USERNAME/phase-1-Project.git`
       - **_<span style="color:red">Replace link with your SSH link_</span>**
 
-**5.** Navigate into the cloned habit-tracker folder:
-   - `cd habit-tracker`
+**5.** Navigate into the cloned folder:
+   - `cd phase-1-Project`
 
-### **Step 3:** Install json-server
+### Step 3: Install json-server
 
 **6.** The app uses json-server to manage a local database of your habits. If you don't have json-server installed globally, install it by running the following command:
    - `npm install -g json-server`
 
-### **Step 4:** Run json-server
+### Step 4: Run json-server
 
 **7.** To start managing your habits data, run json-server in your habit-tracker directory with this command:
    - `json-server db.json`
 
-### **Step 5:** Install live-server
+### Step 5: Install live-server
 
 **8.** The app uses live-server to serve the HTML and JavaScript files locally, and automatically reload changes in your browser. If you don't already have live-server installed, you can install it globally by opening a new terminal and running:
    - `npm install -g live-server`
 
-### **Step 6:** Run live-server
+### Step 6: Run live-server
 
 **9.** After installing live-server, you can launch it in the new terminal by going to the habit-tracker directory and typing:
    - `live-server`
 
-**10.** live-server will automatically open the app in your default browser. If for some reason it doesn't, manually visit http://127.0.0.1:8080 or http://localhost:8080 in your browser.
+**10.** live-server should automatically open the app in your default browser. If for some reason it doesn't, manually visit http://127.0.0.1:8080 or http://localhost:8080 in your browser.
 
-### **Step 7:** Start Using the App
+### Step 7: Start Using the App
 
 **11.** Once the app is running in your browser, you can start adding habits, and tracking your progress.
 
@@ -88,3 +88,6 @@ Then, navigate into the folder:
 ## Data Storage
 
 The Habit Tracker uses json-server to store your habit data locally. This means the app saves and retrieves habits from a local db.json file.
+
+### Devices
+This application was made using macOS. Works on macOS and linux pc devices, not made for mobile.
