@@ -58,7 +58,7 @@ Then, navigate into the folder:
 
 ### Step 5: Install live-server
 
-**8.** The app uses live-server to serve the HTML and JavaScript files locally, and automatically reload changes in your browser. If you don't already have live-server installed, you can install it globally by opening a new terminal and running:
+**8.** The app uses live-server to serve the HTML and JavaScript files locally, and automatically reload changes in your browser. If you don't already have live-server installed, you can install it globally by opening another seperate terminal and running:
    - `npm install -g live-server`
 
 ### Step 6: Run live-server
