@@ -63,8 +63,8 @@ Then, navigate into the folder:
 
 ### Step 6: Run live-server
 
-**9.** After installing live-server, you can launch it in another
- terminal by going to the phase-1-Project directory and typing:
+**9.** After installing live-server, you can launch it in the same
+ terminal in step 5 by going to the phase-1-Project directory and typing:
    - `live-server`
 
 **10.** live-server should automatically open the app in your default browser. If for some reason it doesn't, manually visit http://127.0.0.1:8080 or http://localhost:8080 in your browser.
