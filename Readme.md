@@ -53,7 +53,7 @@ Then, navigate into the folder:
 
 ### Step 4: Run json-server
 
-**7.** To start managing your habits data, run json-server in your habit-tracker directory with this command:
+**7.** To start managing your habits data, run json-server in your phase-1-Project directory with this command:
    - `json-server db.json`
 
 ### Step 5: Install live-server
@@ -63,7 +63,8 @@ Then, navigate into the folder:
 
 ### Step 6: Run live-server
 
-**9.** After installing live-server, you can launch it in the new terminal by going to the habit-tracker directory and typing:
+**9.** After installing live-server, you can launch it in another
+ terminal by going to the phase-1-Project directory and typing:
    - `live-server`
 
 **10.** live-server should automatically open the app in your default browser. If for some reason it doesn't, manually visit http://127.0.0.1:8080 or http://localhost:8080 in your browser.
