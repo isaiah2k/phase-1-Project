@@ -89,5 +89,46 @@ Then, navigate into the folder:
 
 The Habit Tracker uses json-server to store your habit data locally. This means the app saves and retrieves habits from a local db.json file.
 
+### Contributors Guide
+
+-	Style Guide: Follow existing coding style patterns.
+-	Commit Messages: Write a short and sweet commit messages.
+-	Testing: Test all changes locally before pushing.
+-	Code Review: Be ready to make changes if your pull request needs improvements or clarification.
+
+### Reporting Issues
+
+If you find any bugs or want to request a new feature, please open an issue on GitHub. Provide as much detail as possible, including steps to reproduce the issue if it’s a bug.
+
 ### Devices
 This application was made using macOS. Works on macOS and Linux PC systems, not made for mobile devices.
+
+### Liscense 
+
+```MIT License
+
+Copyright (c) [2024] [Isaiah Mitchell]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Don't steal this or ill be mad...
+and ill know
+
+(ง •̀ᗝ•́)ง
+```
