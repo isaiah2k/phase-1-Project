@@ -24,9 +24,8 @@ Follow these steps to get the Habit Tracker running in your browser.
 
 ### Step 1: Create a Folder for the App
 
-**1.** Create a new folder on your computer where you want the Habit Tracker to reside. On Windows, open File Explorer, go to the location where you'd like to place the folder, right-click, and choose "New" > "Folder." Name it "habit-tracker-app".
-
-On Mac/Linux, open Terminal, and type:
+**1.** Create a new folder on your computer where you want the Habit Tracker to reside. 
+On Mac or Linux/Ubuntu, open Terminal, and type:
 - `mkdir habit-tracker-app`
 
 Then, navigate into the folder:
@@ -90,4 +89,4 @@ Then, navigate into the folder:
 The Habit Tracker uses json-server to store your habit data locally. This means the app saves and retrieves habits from a local db.json file.
 
 ### Devices
-This application was made using macOS. Works on macOS and linux pc devices, not made for mobile.
+This application was made using macOS. Works on macOS and Linux PC systems, not made for mobile.
