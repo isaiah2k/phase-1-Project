@@ -89,4 +89,4 @@ Then, navigate into the folder:
 The Habit Tracker uses json-server to store your habit data locally. This means the app saves and retrieves habits from a local db.json file.
 
 ### Devices
-This application was made using macOS. Works on macOS and Linux PC systems, not made for mobile.
+This application was made using macOS. Works on macOS and Linux PC systems, not made for mobile devices.
