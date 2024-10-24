@@ -103,7 +103,7 @@ If you find any bugs or want to request a new feature, please open an issue on G
 ### Devices
 This application was made using macOS. Works on macOS and Linux PC systems, not made for mobile devices.
 
-### Liscense 
+#### Liscense 
 
 ```MIT License
 

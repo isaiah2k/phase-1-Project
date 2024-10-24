@@ -12,20 +12,16 @@ if (localStorage.getItem('nightMode') === 'enabled') {
 
 const baseURL = 'http://localhost:3000/habits'
 
-const habitForm = document.getElementById('habit-form')
 const habitList = document.getElementById('habit-list')
 
-function loadHabits() {
-  fetch(baseURL)
-    .then(res => res.json())
-    .then(habits => {
-      renderHabits(habits)
-    })
-    .catch(error => console.error('Error loading habits:', error))
+async function loadHabits() {
+  const response = await fetch(baseURL)
+  const habits = await response.json()
+
+  renderHabits(habits)
 }
 
 function renderHabits(habits) {
-
   habitList.replaceChildren()
 
   habits.forEach(habit => {
@@ -40,61 +36,45 @@ function renderHabits(habits) {
     deleteButton.textContent = 'Delete'
     deleteButton.addEventListener('click', () => deleteHabit(habit.id))
 
-    habitItem.appendChild(progressButton)
+    habitItem.append(progressButton, deleteButton)
     
-    habitItem.appendChild(deleteButton)
-
-    habitList.appendChild(habitItem)
+    habitList.append(habitItem)
   })
 }
 
-function addHabit() {
-  const habitName = document.getElementById('habit-name').value
-  const habitFrequency = document.getElementById('habit-frequency').value
+async function addHabit(event) {
+  event.preventDefault()
 
   const newHabit = {
-    name: habitName,
+    name: document.getElementById('habit-name').value,
     progress: 0,
-    frequency: habitFrequency
+    frequency: document.getElementById('habit-frequency').value,
   }
 
-  fetch(baseURL, {
+  const response = await fetch(baseURL, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
+    headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(newHabit)
   })
-    .then(res => res.json())
-    .then(addedHabit => {
-      renderHabits([addedHabit])
-    })
-    .catch(error => console.error('Error adding habit:', error))
+
+  loadHabits()
 }
 
-function updateHabit(id, currentProgress) {
-  fetch(`${baseURL}/${id}`, {
+async function updateHabit(id, currentProgress) {
+  await fetch(`${baseURL}/${id}`, {
     method: 'PATCH',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ progress: currentProgress + 1 })
   })
-    .then(() => {
-      loadHabits()
-    })
-    .catch(error => console.error('Error updating habit'))
+  
+  loadHabits()
 }
 
-function deleteHabit(id) {
-  fetch(`${baseURL}/${id}`, {
-    method: 'DELETE'
-  })
-    .then(() => {
+async function deleteHabit(id) {
+  await fetch(`${baseURL}/${id}`, {method: 'DELETE'})
       loadHabits()
-    })
-
-}
+    }
 
 loadHabits()
 
-habitForm.addEventListener('submit', addHabit)
-
+document.getElementById('habit-form').addEventListener('submit', addHabit)
