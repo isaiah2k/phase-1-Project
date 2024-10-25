@@ -127,8 +127,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Don't steal this or ill be mad...
-and ill know
+Don't steal this or i'll be mad...
+and i'll know.
 
 (ง •̀ᗝ•́)ง
 ```
