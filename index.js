@@ -51,7 +51,7 @@ async function addHabit(event) {
     frequency: document.getElementById('habit-frequency').value,
   }
 
-  const response = await fetch(baseURL, {
+  await fetch(baseURL, {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(newHabit)
